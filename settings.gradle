@@ -1,2 +1,6 @@
 rootProject.name = 'java9_module'
 
+include 'model'
+include 'service'
+include 'db'
+include 'client'
