@@ -4,3 +4,5 @@ include 'model'
 include 'service'
 include 'db'
 include 'client'
+include 'base'
+

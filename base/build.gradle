@@ -1,8 +1,8 @@
 plugins {
-    id 'java'
+    id 'java-library'
 }
 
-group = 'org.clientModule'
+group = 'org.baseModule'
 version = '1.0-SNAPSHOT'
 
 repositories {
@@ -10,11 +10,8 @@ repositories {
 }
 
 dependencies {
-    implementation project(path: ':base')
-    implementation project(path: ':db')
-    implementation project(path: ':service')
-    implementation project(path: ':model')
-
+    api 'org.apache.logging.log4j:log4j-api:2.20.0'
+    api 'org.apache.logging.log4j:log4j-core:2.20.0'
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
